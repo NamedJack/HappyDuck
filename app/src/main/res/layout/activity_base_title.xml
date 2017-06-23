@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.run.happyduck.base.view.BaseTitleActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/base_title_linear"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <com.run.happyduck.base.view.RevealLayout
+            android:id="@+id/base_title_left_linear"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="2"
+            android:clickable="true"
+            android:gravity="center"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/base_title_left_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@null"
+                android:src="@drawable/icon_left_back" />
+
+            <TextView
+                android:id="@+id/base_title_left_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="18sp" />
+        </com.run.happyduck.base.view.RevealLayout>
+
+        <TextView
+            android:id="@+id/base_title_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:gravity="center"
+            android:textSize="20sp" />
+
+        <com.run.happyduck.base.view.RevealLayout
+            android:id="@+id/base_title_right_linear"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="2"
+            android:clickable="true"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/base_title_right_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:gravity="center"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/base_title_right_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icon_home_black"
+                android:contentDescription="@null" />
+        </com.run.happyduck.base.view.RevealLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/base_frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+</LinearLayout>
